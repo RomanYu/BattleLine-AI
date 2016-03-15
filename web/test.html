@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/game.css">
+    <title>生活黄页</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="count">剩余牌数：<span class="rest">46</span></p>
+        <ul class="hand-a">
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+        </ul>
+        <p class="player-a">玩家：<span class="name-a">--</span></p>
+        <table class="table-a">
+            <tr class="line1">
+                <td class='region0' data-num=''></td>
+                <td class='region1' data-num=''></td>
+                <td class='region2' data-num=''></td>
+                <td class='region3' data-num=''></td>
+                <td class='region4' data-num=''></td>
+                <td class='region5' data-num=''></td>
+                <td class='region6' data-num=''></td>
+                <td class='region7' data-num=''></td>
+                <td class='region8' data-num=''></td>
+            </tr>
+            <tr class="line2">
+                <td class='region0' data-num=''></td>
+                <td class='region1' data-num=''></td>
+                <td class='region2' data-num=''></td>
+                <td class='region3' data-num=''></td>
+                <td class='region4' data-num=''></td>
+                <td class='region5' data-num=''></td>
+                <td class='region6' data-num=''></td>
+                <td class='region7' data-num=''></td>
+                <td class='region8' data-num=''></td>
+            </tr>
+            <tr class="line3">
+                <td class='region0' data-num=''></td>
+                <td class='region1' data-num=''></td>
+                <td class='region2' data-num=''></td>
+                <td class='region3' data-num=''></td>
+                <td class='region4' data-num=''></td>
+                <td class='region5' data-num=''></td>
+                <td class='region6' data-num=''></td>
+                <td class='region7' data-num=''></td>
+                <td class='region8' data-num=''></td>
+            </tr>
+        </table>
+        <ul class="region-line">
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+            <li><img src="image/grey.png" class="region-img"></li>
+        </ul>
+        <table class="table-b">
+            <tr class="line1">
+                <td class='region0' data-num=''></td>
+                <td class='region1' data-num=''></td>
+                <td class='region2' data-num=''></td>
+                <td class='region3' data-num=''></td>
+                <td class='region4' data-num=''></td>
+                <td class='region5' data-num=''></td>
+                <td class='region6' data-num=''></td>
+                <td class='region7' data-num=''></td>
+                <td class='region8' data-num=''></td>
+            </tr>
+            <tr class="line2">
+                <td class='region0' data-num=''></td>
+                <td class='region1' data-num=''></td>
+                <td class='region2' data-num=''></td>
+                <td class='region3' data-num=''></td>
+                <td class='region4' data-num=''></td>
+                <td class='region5' data-num=''></td>
+                <td class='region6' data-num=''></td>
+                <td class='region7' data-num=''></td>
+                <td class='region8' data-num=''></td>
+            </tr>
+            <tr class="line3">
+                <td class='region0' data-num=''></td>
+                <td class='region1' data-num=''></td>
+                <td class='region2' data-num=''></td>
+                <td class='region3' data-num=''></td>
+                <td class='region4' data-num=''></td>
+                <td class='region5' data-num=''></td>
+                <td class='region6' data-num=''></td>
+                <td class='region7' data-num=''></td>
+                <td class='region8' data-num=''></td>
+            </tr>
+        </table>
+        <p class="player-b">玩家：<span class="name-b">--</span></p>
+        <ul class="hand-b">
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+            <li><div data-num=''></div></li>
+        </ul>
+    </div>
+    <div class="cover display-none">
+        <div class="popup-box">
+            <h2 class="popup-player"></h2>
+            <h1 class="popup-text">胜利!</h1>
+        </div>
+    </div>
+<script type='text/javascript'>
+    // webkitRequestFileSystem(TEMPORARY, 10*1024*1024, function(fs) {
+    //     console.log(fs)
+    //     fs.root.getFile('test.txt', {}, function(entry) {
+    //         entry.file(function(file) {
+    //             var reader = new FileReader();
+    //             reader.readAsText(file);
+    //             reader.onload = function() {
+    //                 console.log(reader.result);
+    //             }
+    //         });
+    //     });
+    // });
+    // window.onload = function() {
+    //     var nick = prompt('sdasaaaaaadsd');
+    //     var input = document.getElementById('input');
+    //     input.focus();
+    //     var chat = new EventSource('/chat');
+    //     chat.onmessage = function(event) {
+    //         var msg = event.data;
+    //         console.log(msg);
+    //     }
+
+    //     input.onchange = function() {
+    //         var msg = nick + ': ' + input.value;
+    //         var xhr = new XMLHttpRequest();
+    //         xhr.open('POST', '/chat');
+    //         xhr.setRequestHeader('Content-Type', 'text/plain;charset=UTF-8');
+    //         xhr.send(msg);
+    //         console.log('sadsad')
+    //         input.value = '';
+    //     }
+    // }
+</script>
+<script src='js/zepto.v2.js'></script>
+<script src='js/game.js'></script>
+</body>
+</html>

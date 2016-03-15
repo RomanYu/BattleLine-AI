@@ -1,0 +1,28 @@
+.position(@position: absolute, @top: 0, @left: 0, @z-index) when (@z-index = auto) {
+    position: @position;
+    top: @top;
+    left: @left;
+}
+
+.position(@position: absolute, @top: 0, @left: 0, @z-index: 0) {
+    position: @position;
+    top: @top;
+    left: @left;
+    z-index: @z-index;
+}
+
+.mediate(@height) {
+    height: @height;
+    line-height: @height;
+}
+
+.square(@h) {
+    width: @h;
+    height: @h;
+}
+
+.gradient(@start, @end) {
+    background-color: @start; 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, @start), color-stop(0%, @end)); 
+    background: -webkit-linear-gradient(top, @start 0%, @end 100%); 
+}
