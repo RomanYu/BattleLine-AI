@@ -1,12 +1,18 @@
-# TouchPal Internship Hack Marathon 2015 summer
+# Project of TouchPal Internship Hackathon 2015
 
-### Introduction
+### Abstract
+
+This is a project of [TouchPal](http://www.chubao.cn/) Internship Hackathon 2015, which is an AI of Battle Line. We spent only 1 day to develop it on August 27th, 2015 and finally we got the [**second place**](#award) of seven teams.
+
+### Project
+
+##### Introduction
 
 1.  You should prepare an executable application for this game.
 2.  Modify config.json and indicate the application runtime.
 3.  run ./judge.py to play the game.
 
-### Protocol
+##### Protocol
 
 Card Name:
 There are 60 cards:
@@ -34,3 +40,8 @@ And the following N lines describe the messages.
 Once you read the message, you have 30 secs to give the action.
 No tolerance for timeout or error output.
 
+### What We do?
+
+
+
+<span id="award">![award](https://raw.githubusercontent.com/RomanYu/BattleLine-AI/gh-pages/images/award_for_outstanding_brain.jpg)</span>
